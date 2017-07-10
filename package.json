@@ -1,13 +1,13 @@
 {
-  "name": "webex-timezones",
+  "name": "webex-time-zones",
   "version": "0.1.0",
-  "description": "An enumerated JSON list of Cisco WebEx supported timezones",
+  "description": "An enumerated JSON list of Cisco WebEx supported time zones",
   "license": "MIT",
-  "repository": "brh55/webex-timezones",
+  "repository": "cisco-ie/webex-time-zones",
   "author": {
     "name": "brh55",
     "email": "brhim@cisco.com",
-    "url": "github.com/cisco-ie/webex-timezones"
+    "url": "github.com/cisco-ie/webex-time-zones"
   },
   "engines": {
     "node": ">=4"
@@ -21,7 +21,7 @@
   ],
   "keywords": [
     "webex",
-    "timezones"
+    "time zones"
   ],
   "devDependencies": {
     "xo": "^0.17.0"

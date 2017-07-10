@@ -1,4 +1,4 @@
-# webex-timezones [![Build Status](https://travis-ci.org/brh55/webex-timezones.svg?branch=master)](https://travis-ci.org/brh55/webex-timezones)
+# webex-time-zones [![Build Status](https://travis-ci.org/brh55/webex-timezones.svg?branch=master)](https://travis-ci.org/brh55/webex-timezones)
 
 > 🌐 An enumerated JSON list of Cisco WebEx supported timezones
 
@@ -6,14 +6,14 @@
 ## Install
 
 ```
-$ npm install --save webex-timezones
+$ npm install --save webex-time-zones
 ```
 
 
 ## Usage
 
 ```js
-const tz = require('webex-timezones');
+const tz = require('webex-time-zones');
 
 tz[0] // => 'GMT-12:00, Dateline (Eniwetok)'
 ```
@@ -96,4 +96,4 @@ Update the table on the readme by running the script below: `$ npm run build`
 
 ## License
 
-MIT © [Cisco-IE](https://github.com/cisco-ie/webex-timezones)
+MIT © [Cisco-IE](https://github.com/cisco-ie/webex-time-zones)
