@@ -13,7 +13,8 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo"
+    "test": "xo",
+    "build": "node build.js"
   },
   "files": [
     "index.js"
