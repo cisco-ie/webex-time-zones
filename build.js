@@ -1,5 +1,6 @@
 const fs = require('fs');
 const timezones = require('.');
+
 const template = fs.readFileSync('readme.md').toString();
 
 let table = `### ${timezones.length} Time Zones:\n`;
