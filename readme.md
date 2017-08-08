@@ -96,4 +96,4 @@ Update the table on the readme by running the script below: `$ npm run build`
 
 ## License
 
-MIT © [Cisco-IE](https://github.com/cisco-ie/webex-time-zones)
+MIT © [Cisco Innovation Edge](https://github.com/cisco-ie/webex-time-zones)
