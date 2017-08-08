@@ -1,4 +1,4 @@
-# webex-time-zones [![Build Status](https://img.shields.io/travis/cisco-ie/webex-timezones.svg?style=flat-square&branch=master)](https://travis-ci.org/cisco-ie/webex-timezones)
+# webex-time-zones [![Build Status](https://img.shields.io/travis/cisco-ie/webex-time-zones.svg?style=flat-square&branch=master)](https://travis-ci.org/cisco-ie/webex-time-zones)
 
 > 🌐 An enumerated JSON list of Cisco WebEx supported timezones
 
