@@ -2,7 +2,6 @@
 
 > 🌐 An enumerated JSON list of Cisco WebEx supported timezones
 
-
 ## Install
 
 ```
