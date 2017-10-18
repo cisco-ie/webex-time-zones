@@ -155,6 +155,16 @@ const findIdByOffset = (offset) => {
 	}
 };
 
+const findTimezoneName = (index) => {
+	const timezoneName = timeZones[index];
+	if (timeZoneName === -1) {
+		throw new Error(`No matching timezone, based on index: ${index}`);
+	}
+
+	return timezoneName;
+}
+
 module.exports = {
-	findIdByOffset
+	findIdByOffset,
+	findTimezoneName
 };
