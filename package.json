@@ -24,6 +24,7 @@
     "time zones"
   ],
   "devDependencies": {
+    "ava": "^0.22.0",
     "xo": "^0.17.0"
   }
 }

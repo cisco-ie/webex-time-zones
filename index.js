@@ -153,8 +153,8 @@ const findIdByOffset = (offset) => {
 	} else {
 		return timeZoneId;
 	}
-}
+};
 
 module.exports = {
 	findIdByOffset
-}
+};
