@@ -146,6 +146,12 @@ const findIdByOffset = (offset) => {
 		throw new Error(`Not a valid offset input, received ${typeof serializedOffset}`);
 	}
 
+	const isAValidOffset = serializedOffset.match(/\d{1,2}:[0|3]0/).length > 1;
+
+	if (!isValidOffset) {
+		throw new Error('Not a valid offset');
+	}
+
 	const timeZoneId = gmtOffsets.indexOf(serializedOffset);
 
 	if (timeZoneId === -1) {
@@ -157,7 +163,7 @@ const findIdByOffset = (offset) => {
 
 const findTimezoneName = (index) => {
 	const timezoneName = timeZones[index];
-	if (timeZoneName === -1) {
+	if (timezoneName === -1) {
 		throw new Error(`No matching timezone, based on index: ${index}`);
 	}
 

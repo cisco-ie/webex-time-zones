@@ -16,3 +16,8 @@ test('Find Id By Offset', t => {
 	let error3 = t.throws(() => fn.findIdByOffset(14));
 	t.is(error3.message, 'Not a valid offset, offset should be between -12 to 12');
 });
+
+test('Find Name By Id', t => {
+	t.is(fn.findTimezoneName(1), 'GMT-11:00, Samoa (Samoa)');
+	t.is(fn.findTimezoneName(4), 'GMT-08:00, Pacific (San Jose)');
+});
