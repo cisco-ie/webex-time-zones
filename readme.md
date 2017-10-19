@@ -21,18 +21,18 @@ webexTz.getIdByOffset('-10:00') // => 2=
 ```
 
 # API
-## getTimezone(index)
+### getTimezone(index)
 Returns the name of the timezone based on the WebEx Id/Enum Value
 
-### index
-**Type:** `number`
+#### index
+**Type:** `number`    
 The enumerated value or index
 
-## getIdByOffet(offset)
+### getIdByOffet(offset)
 Returns the first matching WebEx Id associated with the offset
 
-### offset
-**Type:** `string` (XX:XX) or `number` (-12 to 12)
+#### offset
+**Type:** `string` (XX:XX) or `number` (-12 to 12)    
 The GMT offset it must be a valid number between -12 to 12, or valid GMT offset hours
 
 
@@ -114,4 +114,4 @@ Update the table on the readme by running the script below: `$ npm run build`
 
 ## License
 
-MIT © [Cisco-IE](https://github.com/cisco-ie/webex-time-zones)
+MIT © [Cisco Innovation Edge](https://github.com/cisco-ie/webex-time-zones)
