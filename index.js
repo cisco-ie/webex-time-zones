@@ -161,7 +161,7 @@ const getIdByOffset = (offset) => {
 	}
 };
 
-const getTimezoneName = (index) => {
+const getTimezone = (index) => {
 	const timezoneName = timeZones[index];
 	if (timezoneName === -1) {
 		throw new Error(`No matching timezone, based on index: ${index}`);
@@ -172,5 +172,5 @@ const getTimezoneName = (index) => {
 
 module.exports = {
 	getIdByOffset,
-	getTimezoneName
+	getTimezone
 };

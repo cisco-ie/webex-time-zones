@@ -18,6 +18,6 @@ test('Get Id By Offset', t => {
 });
 
 test('Get Name By Id', t => {
-	t.is(fn.getTimezoneName(1), 'GMT-11:00, Samoa (Samoa)');
-	t.is(fn.getTimezoneName(4), 'GMT-08:00, Pacific (San Jose)');
+	t.is(fn.getTimezone(1), 'GMT-11:00, Samoa (Samoa)');
+	t.is(fn.getTimezone(4), 'GMT-08:00, Pacific (San Jose)');
 });
