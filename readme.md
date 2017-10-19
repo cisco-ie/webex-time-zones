@@ -1,7 +1,6 @@
 # webex-time-zones [![Build Status](https://travis-ci.org/brh55/webex-timezones.svg?branch=master)](https://travis-ci.org/brh55/webex-timezones)
 
-> 🌐 An enumerated JSON list of Cisco WebEx supported timezones
-
+> 🌐 A small node package that helps with dealing with WebEx's Timezone enumerated value
 
 ## Install
 
@@ -13,10 +12,29 @@ $ npm install --save webex-time-zones
 ## Usage
 
 ```js
-const tz = require('webex-time-zones');
+const webexTz = require('webex-time-zones');
 
-tz[0] // => 'GMT-12:00, Dateline (Eniwetok)'
+webexTz.getTimezone(0) // => GMT-12:00, Dateline (Eniwetok)
+webexTz.getTimezone(3) // => GMT-09:00, Alaska (Ancorage)
+webexTz.getIdByOffset('11:00') // => 60
+webexTz.getIdByOffset('-10:00') // => 2=
 ```
+
+# API
+## getTimezone(index)
+Returns the name of the timezone based on the WebEx Id/Enum Value
+
+### index
+**Type:** `number`
+The enumerated value or index
+
+## getIdByOffet(offset)
+Returns the first matching WebEx Id associated with the offset
+
+### offset
+**Type:** `string` (XX:XX) or `number` (-12 to 12)
+The GMT offset it must be a valid number between -12 to 12, or valid GMT offset hours
+
 
 ### Update Table
 Update the table on the readme by running the script below: `$ npm run build`
