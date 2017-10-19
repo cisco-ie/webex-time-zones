@@ -1,29 +1,33 @@
 {
-  "name": "webex-time-zones",
-  "version": "0.1.0",
-  "description": "An enumerated JSON list of Cisco WebEx supported time zones",
-  "license": "MIT",
-  "repository": "cisco-ie/webex-time-zones",
-  "author": {
-    "name": "brh55",
-    "email": "brhim@cisco.com",
-    "url": "github.com/cisco-ie/webex-time-zones"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo",
-    "build": "node build.js"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "webex",
-    "time zones"
-  ],
-  "devDependencies": {
-    "xo": "^0.17.0"
-  }
+	"name": "webex-time-zones",
+	"version": "0.2.0",
+	"description": "A small node package that helps with dealing with WebEx's Timezone enumerated value.",
+	"license": "MIT",
+	"repository": "cisco-ie/webex-time-zones",
+	"author": {
+		"name": "brh55",
+		"email": "brhim@cisco.com",
+		"url": "github.com/cisco-ie/webex-time-zones"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo",
+		"build": "node build.js"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"webex",
+		"time zones",
+		"node",
+		"timezone",
+		"webex timezone"
+	],
+	"devDependencies": {
+		"ava": "^0.22.0",
+		"xo": "^0.17.0"
+	}
 }

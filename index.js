@@ -1,5 +1,5 @@
 'use strict';
-module.exports = [
+const timeZones = [
 	'GMT-12:00, Dateline (Eniwetok)',
 	'GMT-11:00, Samoa (Samoa)',
 	'GMT-10:00, Hawaii (Honolulu)',
@@ -64,3 +64,113 @@ module.exports = [
 	'GMT+12:00, Fiji (Fiji)',
 	'GMT-09:00, Alaska (Anchorage)'
 ];
+
+const gmtOffsets = [
+	'-12:00',
+	'-11:00',
+	'-10:00',
+	'-9:00',
+	'-8:00',
+	'-7:00',
+	'-7:00',
+	'-6:00',
+	'-6:00',
+	'-6:00',
+	'-5:00',
+	'-5:00',
+	'-5:00',
+	'-4:00',
+	'-4:00',
+	'-3:30',
+	'-3:00',
+	'-3:00',
+	'-2:00',
+	'-1:00',
+	'-9:00',
+	'00:00',
+	'00:00',
+	'1:00',
+	'1:00',
+	'1:00',
+	'1:00',
+	'2:00',
+	'2:00',
+	'2:00',
+	'2:00',
+	'2:00',
+	'2:00',
+	'3:00',
+	'3:00',
+	'3:00',
+	'3:00',
+	'4:00',
+	'4:00',
+	'4:00',
+	'5:00',
+	'5:00',
+	'5:30',
+	'6:00',
+	'6:00',
+	'7:00',
+	'8:00',
+	'8:00',
+	'8:00',
+	'8:00',
+	'9:00',
+	'9:00',
+	'9:30',
+	'9:30',
+	'9:30',
+	'10:00',
+	'10:00',
+	'10:00',
+	'10:00',
+	'10:00',
+	'11:00',
+	'12:00',
+	'12:00',
+];
+
+const getIdByOffset = (offset) => {
+	let serializedOffset = offset;
+
+	if (typeof offset === 'number') {
+		if (offset > 12 || offset < -12) {
+			throw new Error('Not a valid offset, offset should be between -12 to 12');
+		} else {
+			serializedOffset = `${offset}:00`;
+		}
+	}
+
+	if (typeof serializedOffset !== 'string') {
+		throw new Error(`Not a valid offset input, received ${typeof serializedOffset}`);
+	}
+
+	const isAValidOffset = serializedOffset.match(/\d{1,2}:[0|3]0/).length > 1;
+
+	if (!isValidOffset) {
+		throw new Error('Not a valid offset');
+	}
+
+	const timeZoneId = gmtOffsets.indexOf(serializedOffset);
+
+	if (timeZoneId === -1) {
+		throw new Error('Not valid offset found');
+	} else {
+		return timeZoneId;
+	}
+};
+
+const getTimezone = (index) => {
+	const timezoneName = timeZones[index];
+	if (timezoneName === -1) {
+		throw new Error(`No matching timezone, based on index: ${index}`);
+	}
+
+	return timezoneName;
+}
+
+module.exports = {
+	getIdByOffset,
+	getTimezone
+};
