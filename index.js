@@ -131,7 +131,7 @@ const gmtOffsets = [
 	'12:00',
 ];
 
-const findIdByOffset = (offset) => {
+const getIdByOffset = (offset) => {
 	let serializedOffset = offset;
 
 	if (typeof offset === 'number') {
@@ -161,7 +161,7 @@ const findIdByOffset = (offset) => {
 	}
 };
 
-const findTimezoneName = (index) => {
+const getTimezoneName = (index) => {
 	const timezoneName = timeZones[index];
 	if (timezoneName === -1) {
 		throw new Error(`No matching timezone, based on index: ${index}`);
@@ -171,6 +171,6 @@ const findTimezoneName = (index) => {
 }
 
 module.exports = {
-	findIdByOffset,
-	findTimezoneName
+	getIdByOffset,
+	getTimezoneName
 };
