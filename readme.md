@@ -1,4 +1,4 @@
-# webex-time-zones [![Build Status](https://travis-ci.org/brh55/webex-timezones.svg?branch=master)](https://travis-ci.org/brh55/webex-timezones)
+# webex-time-zones [![Build Status](https://img.shields.io/travis/cisco-ie/webex-time-zones.svg?style=flat-square&branch=master)](https://travis-ci.org/cisco-ie/webex-time-zones)
 
 > 🌐 A small node package that helps with dealing with WebEx's Timezone enumerated value
 
