@@ -128,10 +128,10 @@ const gmtOffsets = [
 	'10:00',
 	'11:00',
 	'12:00',
-	'12:00',
+	'12:00'
 ];
 
-const getIdByOffset = (offset) => {
+const getIdByOffset = offset => {
 	let serializedOffset = offset;
 
 	if (typeof offset === 'number') {
@@ -146,7 +146,7 @@ const getIdByOffset = (offset) => {
 		throw new Error(`Not a valid offset input, received ${typeof serializedOffset}`);
 	}
 
-	const isAValidOffset = serializedOffset.match(/\d{1,2}:[0|3]0/).length > 1;
+	const isValidOffset = serializedOffset.match(/\d{1,2}:[0|3]0/).length > 1;
 
 	if (!isValidOffset) {
 		throw new Error('Not a valid offset');
@@ -161,14 +161,14 @@ const getIdByOffset = (offset) => {
 	}
 };
 
-const getTimezone = (index) => {
+const getTimezone = index => {
 	const timezoneName = timeZones[index];
 	if (timezoneName === -1) {
 		throw new Error(`No matching timezone, based on index: ${index}`);
 	}
 
 	return timezoneName;
-}
+};
 
 module.exports = {
 	getIdByOffset,
