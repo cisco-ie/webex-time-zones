@@ -116,6 +116,15 @@ Update the table on the readme by running the script below: `$ npm run build`
 
 <!-- END TABLE -->
 
+## Related
+If you found this client useful for collaboration, don't forget to star this repository and check other related open-source Cisco modules by the Innovation Edge team:
+
+- [webex-api-client](https://github.com/cisco-ie/webex-api-client) - A node module to simplify interacting with Cisco WebEx XML-based APIs from the browser or server
+- [rrule-to-webex](https://github.com/cisco-ie/rrule-to-webex) - Converts a RRULE (iCalendar RFC-5545) to Cisco's WebEx recurrence repeat XML tree.
+- [cisco-tp-client](https://github.com/cisco-ie/cisco-tp-client) - A node API client to ease interactions with Cisco WebEx Telepresence-enabled endpoints / codecs
+- [webex-date](https://github.com/cisco-ie/webex-date) - 🕰 Convert a JavaScript date type, RFC 2822, ISO-8601 to the WebEx XML API supported format.
+- [webex-enum-types](https://github.com/cisco-ie/webex-enum-types) - 🍭 A JSON mapping of enumerated types for Cisco's WebEx XML API
+
 ## License
 
 MIT © [Cisco Innovation Edge](https://github.com/cisco-ie/webex-time-zones)
