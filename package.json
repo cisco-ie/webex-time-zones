@@ -1,11 +1,11 @@
 {
 	"name": "webex-time-zones",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "A small node package that helps with dealing with WebEx's Timezone enumerated value.",
 	"license": "MIT",
 	"repository": "cisco-ie/webex-time-zones",
 	"author": {
-		"name": "brh55",
+		"name": "Brandon Him",
 		"email": "brhim@cisco.com",
 		"url": "github.com/cisco-ie/webex-time-zones"
 	},
