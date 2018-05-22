@@ -1,6 +1,6 @@
 # webex-time-zones [![Build Status](https://img.shields.io/travis/cisco-ie/webex-time-zones.svg?style=flat-square&branch=master)](https://travis-ci.org/cisco-ie/webex-time-zones)
 
-> 🌐 A small node package that helps with dealing with WebEx's Timezone enumerated value
+> 🌐 A small node package that helps with dealing with Webex's Timezone enumerated value
 
 ## Install
 
@@ -29,7 +29,10 @@ Returns the name of the timezone based on the WebEx Id/Enum Value
 The enumerated value or index
 
 ### getIdByOffet(offset)
-> Note: This is an approximation (https://stackoverflow.com/tags/timezone/info) as many time zones fall into a offset. You can try using the `<fallInDST>` webex xml attribute to allow webex to determine the DST offset of a given timezone and datetime.
+> **Note:**
+>
+> This is an approximation (https://stackoverflow.com/tags/timezone/info) as many time zones fall into a offset. You can try using the `<fallInDST>` webex xml attribute to allow webex to determine the DST offset of a given timezone and datetime.
+
 Returns the first matching WebEx Id associated with the offset
 
 #### offset
