@@ -146,7 +146,7 @@ const getIdByOffset = offset => {
 		throw new Error(`Not a valid offset input, received ${typeof serializedOffset}`);
 	}
 
-	const isValidOffset = serializedOffset.match(/\d{1,2}:[0|3]0/).length > 1;
+	const isValidOffset = serializedOffset.match(/\d{1,2}:[0|3]0/).length > 0;
 
 	if (!isValidOffset) {
 		throw new Error('Not a valid offset');
