@@ -3,7 +3,9 @@ import fn from '.';
 
 test('Get Id By Offset', t => {
 	t.is(fn.getIdByOffset('-10:00'), 2);
+	t.is(fn.getIdByOffset('-04:00'), 13);
 	t.is(fn.getIdByOffset(-10), 2);
+	t.is(fn.getIdByOffset(-4), 13);
 	t.is(fn.getIdByOffset('11:00'), 60);
 	t.is(fn.getIdByOffset(11), 60);
 
@@ -15,6 +17,9 @@ test('Get Id By Offset', t => {
 
 	let error3 = t.throws(() => fn.getIdByOffset(14));
 	t.is(error3.message, 'Not a valid offset, offset should be between -12 to 12');
+
+	let error4 = t.throws(() => fn.getIdByOffset('-4:00'));
+	t.is(error4.message, 'Not a valid offset');
 });
 
 test('Get Name By Id', t => {
