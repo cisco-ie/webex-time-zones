@@ -36,8 +36,8 @@ The enumerated value or index
 Returns the first matching WebEx Id associated with the offset
 
 #### offset
-**Type:** `string` (XX:XX) or `number` (-12 to 12)    
-The GMT offset it must be a valid number between -12 to 12, or valid GMT offset hours
+**Type:** `string` (XX:XX) or `integer` (-12 to 12)    
+The GMT offset it must be a valid number between -12 to 12, or valid GMT offset hours. Please be aware that when using `integer` not all time zones can be used. For example India that uses a time zone with a 30 minute offset. If you need to support all time zones, use the `string` (hh:mm) argument.
 
 
 ### Update Table
